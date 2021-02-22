@@ -1,0 +1,102 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 64px 164px 65px 165px;
+    color: $darkGrey;
+
+    &__header {
+        display: flex; 
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__logo {
+        margin-right: 18.7px;
+    }
+
+}
+
+.nav {
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    &__item {
+        text-transform: uppercase;
+        font-size: 14px;
+        margin-left: 42px;
+        letter-spacing: 2px;
+    }
+
+    &__link {
+        cursor: pointer;
+
+        &:hover {
+            text-decoration-line: underline;
+        }
+    }
+
+    &__mobile {
+        display: none;
+    }
+}
+
+.hamburger {
+    &__btn {
+        border: none;
+        background-color: transparent; 
+
+            &:focus {
+                outline: none;
+            }
+        }
+    
+    &__btn {
+        display: none;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .navbar {
+        margin-right: 40px;
+        margin-left: 39px;
+    }
+}
+
+@media all and (max-width: 691px) {
+    .nav {
+        display: none;
+    }
+    .hamburger {
+        &__btn {
+            display: block;
+        }
+    }
+
+    .nav {
+        &__mobile {
+            display: block;
+            width: 100%;
+            background-color: $black;
+            color: $white;
+
+        }
+
+        &__list {
+            padding: 48px 24px 48px 24px; 
+        }
+    }
+
+}
+
+@media all and(max-width: 425px) {
+    .navbar {
+        margin: 35px 24px 34px 24px; 
+    }
+}
