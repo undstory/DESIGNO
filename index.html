@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-   
+    <script src="scripts/script.js" defer async></script>
     <title>Document</title>
 </head>
 <body>
@@ -25,14 +25,14 @@
                     <li class="nav__item"><a class="nav__link">Contact</a></li>
                 </ul>
             </nav>
-            <button class="hamburger__btn"><img src="assets/hamburger.png" class="hamburger__img" /></button>
-         
+            <button class="hamburger__btn" id="hamburger__btn"><img src="assets/hamburger.png" class="hamburger__img" /></button>
+            <button class="close__btn" id="close__btn"><img src="assets/close.png" class="close__img" /></button>
         </div>
-        <nav class="nav__mobile">
-            <ul class="nav__list">
-                <li class="nav__item"><a class="nav__link">Our company</a></li>
-                <li class="nav__item"><a class="nav__link">Locations</a></li>
-                <li class="nav__item"><a class="nav__link">Contact</a></li>
+        <nav id="mobile" class="mobile hidden">
+            <ul class="mobile__list">
+                <li class="mobile__item"><a class="mobile__link">Our company</a></li>
+                <li class="mobile__item"><a class="mobile__link">Locations</a></li>
+                <li class="mobile__item"><a class="mobile__link">Contact</a></li>
             </ul>
         </nav>
     </div>
