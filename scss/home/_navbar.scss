@@ -83,7 +83,8 @@
     width: 100%;
     animation-name: example;
     animation-duration: 1.5s;
-  
+    position: absolute;
+    z-index: 255;
 
     &__list {
        padding: 48px 24px;

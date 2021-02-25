@@ -12,4 +12,5 @@ closeBtn.addEventListener('click', () => {
     mobileList.classList.add('hidden');
     closeBtn.style.display = 'none';
     hamburgerBtn.style.display = 'block';
+
 })
