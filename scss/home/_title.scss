@@ -40,3 +40,81 @@
         @include typicalBtn;
     }
 }
+
+@media all and (max-width: 1200px) {
+    .title {
+        margin: 0 40px;
+        height: 843px;
+
+        &__box {
+            top: 240px;
+            left: 50%;
+            right: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        &__phone {
+            bottom: -353px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            clip-path: inset(0 0 353px);
+        }
+
+        &__text {
+            margin: 30px 0 20px;
+            line-height: 1.8;
+        }
+    }
+}
+
+@media all and (max-width: 692px) {
+    .title {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+
+        &__phone {
+            display: none;
+        }
+
+        background-image: url('../../assets/image-hero-phone2.png');
+        background-position: bottom center;
+    }
+}
+
+@media all and (max-width: 568px) {
+    .title {
+
+        &__box {
+            width: 327px;
+        }
+
+        &__header {
+            font-size: 32px;
+            
+        }
+
+        &__text {
+            font-size: 15px;
+        }
+    }
+}
+
+@media all and (max-width: 360px) {
+    .title {
+        &__box {
+            width: 290px;
+        }
+
+        &__header {
+            font-size: 24px;
+            
+        }
+
+        &__text {
+            font-size: 15px;
+        }
+    }
+}
