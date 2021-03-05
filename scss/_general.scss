@@ -12,7 +12,15 @@ html {
     position: relative;
 }
 
+.rectangle {
+    background-image: url("../assets/Rectangle.svg");
+    background-position-x: 0;
+    background-position-y: 475px;
+    background-repeat: no-repeat;
+}
+
 .hidden {
     display: none;
   
 }
+
