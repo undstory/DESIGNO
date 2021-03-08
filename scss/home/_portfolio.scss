@@ -120,6 +120,68 @@
         margin-left: 40px;
         margin-right: 40px;
         flex-direction: column;
-    }
+        justify-content: space-between;
+        align-items: center;
 
+        &__web, &__app, &__graphic {
+            width: 989px;
+            height: 200px;
+            background-size: cover;
+        }
+
+        &__web {
+            background-image: url('../../assets/image-web-design-small.jpg'); 
+        }
+
+        &__app {
+            margin-bottom: 20px;
+        }
+    }
 }
+
+@media all and (max-width: 1066px) {
+    .portfolio {
+
+        &__web, &__app, &__graphic {
+        width: 689px;
+    }
+    }
+}
+
+@media all and (max-width: 760px) {
+    .portfolio {
+        height: 798px;
+
+        &__web, &__app, &__graphic {
+            width: 489px;
+            height: 250px;
+    }
+    }
+}
+
+@media all and (max-width: 556px) {
+    .portfolio {
+
+        &__web, &__app, &__graphic {
+        width: 320px;
+    }
+    }
+}
+
+@media all and (max-width: 320px) {
+    .portfolio {
+        &__web, &__app, &__graphic {
+            border-radius: 0;
+        
+            &:hover {
+                border-radius: 0;
+
+                &::after {
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+   
+}
+

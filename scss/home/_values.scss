@@ -1,0 +1,15 @@
+.values {
+    margin: 160px auto 0;
+    max-width: 1112px;
+    height: 640px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.value {
+    &__img {
+        background-image: url('../../assets/minioval.png');
+    }
+}
