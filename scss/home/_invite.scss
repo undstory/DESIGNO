@@ -9,21 +9,39 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    background-image: url('../../assets/grupaOval.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+    padding-left: 95px;
+    padding-right: 95px;
 
     &__text {
-        width: 50%;
-        background-image: url('../../assets/minioval.png');
-        background-position-x: right;
-        background-position-y: bottom;
-        background-repeat: no-repeat;
-        border: 1px solid blue;
+       display: flex;
+       flex-direction: column;
+       color: #fff;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 40px;
+        width: 268px;
+    }
+
+    &__info {
+        font-weight: normal;
+        width: 459px;
+        font-size: 16px;
+        line-height: 26px;
+        margin-top: 20px;
     }
 
     &__btn {
-        width: 50%;
-        background-image: url('../../assets/minioval.png');
-        background-position-y: -25%;
+       @include typicalBtn;
+        
+      
     
-        border: 1px solid yellow;
+    
     }
 }
