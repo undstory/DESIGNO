@@ -43,8 +43,14 @@
     }
 }
 
-@media all and (max-width: 760px) {
+@media all and (max-width: 1200px) {
+    .values {
+        height: 940px;
+        margin-bottom: 260px;
+    }
+}
 
+@media all and (max-width: 760px) {
 
     .values {
         flex-direction: column;
