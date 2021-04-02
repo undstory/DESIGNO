@@ -97,4 +97,39 @@
     .footer {
         padding-top: 80px;
     }
+
+    .line {
+        display: none;
+    }
+
+    .footer__info {
+        margin-top: 40px;
+    }
+}
+
+@media all and (max-width: 974px) {
+    .foobar .nav, .footer__media {
+        padding-right: 65px;
+    }
+
+    .foobar__header, .footer__address {
+        padding-left: 65px;
+    }
+
+    .invite {
+        margin-left: 65px;
+        margin-right: 65px;
+    }
+}
+
+@media all and (max-width: 776px) {
+    .foobar {
+        flex-direction: column;
+        justify-content: center;
+       
+    }
+
+    .footer__info {
+        flex-direction: column;
+    }
 }
