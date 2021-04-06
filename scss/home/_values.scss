@@ -50,6 +50,12 @@
     }
 }
 
+@media all and (max-width: 768px) {
+    .values {
+        height: 1340px;
+    }
+}
+
 @media all and (max-width: 760px) {
 
     .values {
