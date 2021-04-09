@@ -47,6 +47,25 @@
     }
 }
 
+.invite__mini {
+    background-color: $peach;
+    height: 379px;
+    margin-left: 24px;
+    margin-right: 24px;
+    border-radius: 15px;
+    position: absolute;
+    top: -190px;
+    min-width: 327px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 @media all and (max-width: 1177px) {
     .invite {
         flex-direction: column;
@@ -67,3 +86,28 @@
         }
     }
 }
+
+@media all and (min-width: 776px) {
+
+    .invite {
+        display: none
+    }
+}
+
+@media all and (max-width: 551px) {
+    .invite__info {
+        width: 279px;
+    }
+
+    .invite__title {
+        font-size: 35px;
+    }
+}
+
+@media all and (max-width: 381px) {
+    .invite__mini {
+        min-width: 300px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+} 

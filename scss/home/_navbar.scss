@@ -115,7 +115,15 @@
         margin-right: 40px;
         margin-left: 39px;
     }
+
+    .navbar .nav {
+        padding-right: 0;
+    }
 }
+
+// @media all and (max-width: 779) {
+  
+// }
 
 @media all and (max-width: 691px) {
     .nav {
