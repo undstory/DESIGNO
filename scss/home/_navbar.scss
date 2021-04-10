@@ -104,6 +104,28 @@
     }
 }
 
+.nav__mini {
+    position: absolute;
+    top: 385px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav__list--mini {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__item--mini {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
 @keyframes example {
     from {opacity: 0}
     to {opacity: 1}
