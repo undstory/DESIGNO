@@ -2,12 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
-
 .container {
     max-width: 1440px;
     min-height: 2940px;
     margin: 0 auto;
-    border: 1px solid red;
     font-family: $font;
     position: relative;
 }
@@ -28,6 +26,5 @@ html {
 
 .hidden {
     display: none;
-  
 }
 

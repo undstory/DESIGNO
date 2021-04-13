@@ -111,3 +111,9 @@
         margin-right: 0;
     }
 } 
+
+@media all and (min-width: 777px) {
+    .invite {
+        display: flex;
+    }
+}

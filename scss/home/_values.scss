@@ -45,16 +45,16 @@
 
 @media all and (max-width: 1200px) {
     .values {
-        // height: 940px;
+        // height: 1140px;
         margin-bottom: 260px;
     }
 }
 
-// @media all and (max-width: 768px) {
-//     .values {
-//         height: 1340px;
-//     }
-// }
+@media all and (max-width: 776px) {
+    .values {
+        height: 640px;
+    }
+}
 
 @media all and (max-width: 760px) {
 

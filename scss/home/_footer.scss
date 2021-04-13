@@ -3,7 +3,7 @@
     height: 393px;
     width: 100%;
     position: absolute;
-    bottom: 0;
+    // bottom: 0;
     color: $white;
     display: flex;
     flex-direction: column;
@@ -19,6 +19,14 @@
      
        font-size: 16px;
        line-height: 26px;
+
+       &--mini {
+        position: absolute;
+        top: 510px;
+        left: 50%;
+        transform: translateX(-50%);
+       
+       }
     }
 
     &__address, &__media, &__contact {
@@ -34,11 +42,39 @@
         &--name {
             font-weight: bold;
         }
+
+        &--mini {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2rem;
+            justify-content: center;
+            align-items: center;
+
+            span {
+                margin: .3rem;
+                opacity: .5;
+                font-size: 16px;
+            }
+        }
     }
 
     &__contact {
         font-weight: bold;    
         opacity: .5; 
+
+        &--mini {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2rem;
+            justify-content: center;
+            align-items: center;
+
+            span {
+                margin: .3rem;
+                opacity: .5;
+                font-size: 16px;
+            }
+        }
     }
 
     &__media {
@@ -56,6 +92,13 @@
            &:hover {
                opacity: .5;
            }
+       }
+
+       &--mini {
+           display: flex;
+           flex-direction: row;
+           align-items: center;
+           justify-content: center;
        }
     }
 }
@@ -132,6 +175,12 @@
     position: relative;
 }
 
+@media all and (min-width: 1200px) {
+    .footer {
+        bottom: 0;
+    }
+}
+
 @media all and (max-width: 1177px) {
     .footer {
         padding-top: 80px;
@@ -179,5 +228,10 @@
     }
     .foobar__name {
         width: 75%;
+    }
+}
+@media all and (min-width: 776px) {
+    .footer__mini {
+        display: none;
     }
 }
